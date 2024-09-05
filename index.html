@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>portfolio website</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="protfolio-container">
+     <ul class="navlist">
+          <li><a href="#"class="active">HOME</a></li>
+          <li><a href="#" id="work-link">WORK</a></li>
+          <li><a href="#" id="about-link">ABOUT</a></li>
+            <li><a href="#" id="project-link">PROJECT</a></li>
+            <li><a href="#" id="service-link">SERVICE</a></li>
+          
+          
+     </ul>
+     <div class="left-container">
+          <div class="icons">
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-linkedin-in"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-codepen"></i>
+          </div>
+          <div class="content">
+               <p class="intro">hi! I am <span>Om prakash samal</span></p>
+               <h1>Web Devloper.</h1>
+               <p class="detail">I am from christ university, lavasa. I am 18 year old. now I am pursuing BCA program. My regno is 24112514. My aim is to become Web devloper.</p>
+               <div class="btn-container">
+                    <button>Hire me</button>
+                    <button>veiw Project</button>
+               </div>
+          </div>     
+     </div>
+
+
+     <div id="work-section" style="display: none; margin-top: 20px;">
+          <h2>My Projects</h2>
+          <div class="project">
+              <h3>portfolio website</h3>
+              <p>this is an portfolio website here you can see my hobbies, technology used and looking attractive.</p>
+              <p>Technologies Used: HTML, CSS, JavaScript, PHP, MySQL.</p>
+          </div>
+          <!-- Add more projects here -->
+      </div>
+
+      <!-- About section -->
+    <div id="about-section" style="display: none; margin-top: 20px;">
+     <h2>About Me</h2>
+     <p>I am Om Prakash Samal, currently pursuing my BCA from Christ University, Lavasa. I am passionate about web development and aim to become a professional web developer.</p>
+ </div>
+
+ <!-- Project section -->
+ <div id="project-section" style="display: none; margin-top: 20px;">
+     <h2>Featured Projects</h2>
+     <div class="project">
+         <h3>portfolio Website</h3>
+         <p>This is an portfolio of mine given by my html teacher mr Bijesh sir.</p>
+         <p>Technologies used:- html, css, JavaScript.</p>
+     </div>
+ </div>
+
+<!-- Service section -->
+<div id="service-section" style="display: none; margin-top: 20px;">
+     <h2>Services</h2>
+     <p>I offer a variety of services including:</p>
+     <ul>
+         <li>Web Development</li>
+         <li>Mobile App Development</li>
+         <li>UI/UX Design</li>
+     </ul>
+ </div>
+
+ <script>
+     // Toggle visibility of sections
+     function toggleSection(sectionId) {
+         // Hide all sections first
+         document.getElementById('work-section').style.display = 'none';
+         document.getElementById('about-section').style.display = 'none';
+         document.getElementById('project-section').style.display = 'none';
+         document.getElementById('service-section').style.display = 'none';
+
+          // Show the selected section
+          document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Event listeners for each section
+        document.getElementById('work-link').addEventListener('click', function() {
+            toggleSection('work-section');
+        });
+
+        document.getElementById('about-link').addEventListener('click', function() {
+            toggleSection('about-section');
+        });
+
+        document.getElementById('project-link').addEventListener('click', function() {
+            toggleSection('project-section');
+        });
+
+        document.getElementById('service-link').addEventListener('click', function() {
+            toggleSection('service-section');
+        });
+
+        // Redirect to project details page when 'View Project' button is clicked
+        document.getElementById('view-project-button').addEventListener('click', function() {
+            window.location.href = 'project-details.html'; // Change URL to your project page
+        });
+    </script>
+
+     <div class="design">
+          <div class="circle"></div>
+          <div class="circle"></div>
+     </div>
+    </div>
+     
+</body>
+</html>
+
+
